@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Gugudan</title>
+</head>
+<body>
+    <h2>구구단을 외자~<br>구구단을 외자~</h2>
+    <button onclick="gugudan(1)">1단</button>
+    <button onclick="gugudan(2)">2단</button>
+    <button onclick="gugudan(3)">3단</button><br><br>
+    <button onclick="gugudan(4)">4단</button>
+    <button onclick="gugudan(5)">5단</button>
+    <button onclick="gugudan(6)">6단</button><br><br>
+    <button onclick="gugudan(7)">7단</button>
+    <button onclick="gugudan(8)">8단</button>
+    <button onclick="gugudan(9)">9단</button>
+
+    <p id = "output"></p>
+
+    <script>
+        function gugudan(a) {
+            const outputElement = document.getElementById('output');
+            let output = ''
+            for (let i = 1; i < 10; i++) {
+            output += a + "x" + i + "= " + a*i + "<br>";
+            }
+            console.log(output);
+            outputElement.innerHTML = output;
+        }
+    </script>
+</body>
+</html>
+
